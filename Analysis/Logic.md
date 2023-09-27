@@ -10,6 +10,9 @@ The main object of logic language is the ***proposition***.
 A *proposition* is a statement which can be both true or false (which we refers as *T* and *F*).
 
 **ex.** "*Socrates's a man*";
+
 **ex.** "*Pythagoras's eating an apple*";
+
 **ex.** "3 is a natural number";
+
 **ex.** "$2 + 2 \geq 5$";
