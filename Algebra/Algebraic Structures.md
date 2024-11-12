@@ -3,7 +3,7 @@
 > **DEFINITION.** An *algebraic structure* is an nonempty *set* $A$ paired with a collection of *operations* (mostly a *binary* operation) and a finite set of axioms that the operations must follows.
 
 > **DEFINITION.** An *binary operation* $\cdot$ on a set $A$ is a mapping from elements of the Cartesian product $A \times A$ to $A$.
-> $$ \cdot : A \times A \to A $$
+> $$\begin{alignat*}{2} \cdot :  A \times A & \longrightarrow  A \\ (a_1, a_2) & \longmapsto a = a_1 \cdot a_2 \end{alignat*}$$
 
 The most basic algebraic structure is the **group**.
 
