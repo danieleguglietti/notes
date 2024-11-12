@@ -20,7 +20,7 @@ If the axiom *(iii)* is true, the inverse of an element $g \in G$ is commonly de
 
 Another important property for a group is the commutative property which allows to define a more specific type of group.
 
-> **PROPOSITION.** If the operation of a group follows the commutative axiom
+> **PROPOSITION.** If the operation of a group follows the commutative axiom:
 > $$g_1 \cdot g_2 = g_2 \cdot g_1 \,\,\, \forall g_1,g_2 \in G$$
 > then the group is called a *commutative* group and the operation is commonly denoted as $+$ and it's called *sum*. 
 > In this case the identity element is denoted as $0$ and the inverse element is denoted as $-g$.
