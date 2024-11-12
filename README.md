@@ -1,5 +1,5 @@
 # notes
-This repository contains all my reorganized notes from most of the courses I follow(ed) in my undergradute in physics.
+This repository contains all my reorganized notes from most of the courses I attend(ed) in my undergradute in physics.
 
 Whether you feel like to do give me contribution (spell or adding content), just open a pr and I'll merge it or we'll descuss about it.
 
