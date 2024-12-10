@@ -18,7 +18,7 @@ The numeric set itself is not of much interest. To make things more interesting 
 
 Paired with the sum defined as above, the complex numbers set is not just a set, but becomes a commutative group, leading to a possibility to find a product such that the set can become a field.
 
-> [!proposition|purple-important]
+> [!proposition|orange-important] Proposition. (*2.1*)
 > The pair $(\mathbb{C}, +)$ is a *commutative group*.
 
 > [!proof|gray-info]
@@ -35,7 +35,7 @@ Now, we are aiming to a field so we now need a product such that satisfies the f
 
 This specific product, paired with the above sum, makes $\mathbb{C}$ a field. We'll prove it now.
 
-> [!proposition|purple-important]
+> [!proposition|orange-important] Proposition. (*2.2*)
 > The tuple $(\mathbb{C}, +, \cdot)$ is a *field*.
 
 > [!proof|gray-info] 
@@ -89,7 +89,7 @@ Another interesting fact about the imaginary unit is that if you take a real num
 
 Now we can write more easily the solution to our main problem $\sqrt{-a} = i\sqrt{a} = (0, a) \in \mathbb{C}$, this leads to one of the most important theorem in maths.
 
-> [!theorem|purple-important]  Theorem. *Fundamental theorem of algebra*
+> [!theorem|orange-important]  Theorem. *Fundamental theorem of algebra*
 > Every non-constant single-variable polynomial with complex coefficients has at least one complex root.
 
 This is all about complex numbers.

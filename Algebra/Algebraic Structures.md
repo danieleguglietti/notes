@@ -11,9 +11,9 @@ The most basic algebraic structure is the **group**.
 
 > [!definition|blue-hint]
 > Given a nonempty set $G$ and an operation $\cdot$, a *group* is the pair $(G, \cdot)$ if the operation follows the following axioms:
-> i. *associative* - $g_1 \cdot (g_2 \cdot g_3) = (g_1 \cdot g_2) \cdot g_3 \,\,\, \forall g_1,g_2,g_3 \in G$ 
-> ii. *existence of identity element* - $\exists !\, e \in G : e \cdot g = g \,\,\, \forall g \in G$
-> iii. *existence of inverse element* - $\forall g \in G \, \exists ! \, g' \in G : g \cdot g' = e$
+> *i*. *associative* - $g_1 \cdot (g_2 \cdot g_3) = (g_1 \cdot g_2) \cdot g_3 \,\,\, \forall g_1,g_2,g_3 \in G$ 
+> *ii*. *existence of identity element* - $\exists !\, e \in G : e \cdot g = g \,\,\, \forall g \in G$
+> *iii*. *existence of inverse element* - $\forall g \in G \, \exists ! \, g' \in G : g \cdot g' = e$
 
 If the axiom *(iii)* is true, the inverse of an element $g \in G$ is commonly denoted as $g^{-1}$.
 
@@ -25,7 +25,7 @@ If the axiom *(iii)* is true, the inverse of an element $g \in G$ is commonly de
 
 Another important property for a group is the commutative property which allows to define a more specific type of group.
 
-> [!proposition|purple-important]
+> [!proposition|orange-important] Proposition. (*1.1*)
 > If the operation of a group follows the commutative axiom:
 > $$g_1 \cdot g_2 = g_2 \cdot g_1 \,\,\, \forall g_1,g_2 \in G$$
 > then the group is called a *commutative* group and the operation is commonly denoted as $+$ and it's called *sum*. 
@@ -42,10 +42,10 @@ Another important structure is the *ring*.
 > ii. The operation $\cdot$ must follow the *associative axiom*;
 > iii. The operation $\cdot$ must be distributive with respect of the sum $$r_1 \cdot (r_2 + r_3) = r_1 \cdot r_2 + r_1 \cdot r_3 \,\,\, \forall r_1,r_2,r_3 \in R$$
 
-> [!proposition|purple-important]
+> [!proposition|orange-important] Proposition. (*1.2*)
 > Let $(R, +, \, \cdot)$ be a ring. If $R$ contains the identity element then the ring is called *unary ring* and the identity element is commonly denoted as $1$.
 
->[!proposition|purple-important]
+>[!proposition|orange-important] Proposition. (*1.3*)
 >Let $(A, +, \, \cdot)$ be a ring. If the operation $\cdot$ follows the commutative axiom then the ring is called *commutative* and the operation is called *product*.
 
 > [!example]
