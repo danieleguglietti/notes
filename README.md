@@ -5,6 +5,7 @@ Whether you feel like to do give me contribution (spell or adding content), just
 
 > [!TIP]
 > I suggest you to download and open these with Obsidian if there are no rendered notes.
+> (you would like to install [this css](https://forum.obsidian.md/t/callouts-galore-some-callout-css-i-made/63440) for callouts)
 
 > [!NOTE]
 > I'm planning to transform the content in this repository in a web site. As soon as I have enough time to design and develope it, this repository will be used just as content db.
