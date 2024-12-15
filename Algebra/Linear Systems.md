@@ -124,7 +124,7 @@ We try to do that because in a specific case compatible triangular systems admit
 >So the vector $\vec \sigma = \begin{pmatrix} \sigma_1 & \sigma_2 & \dots & \sigma_n \end{pmatrix}$ is the only solution to the system.
 >$$ \begin{flalign} && && \square \end{flalign} $$
 
-%% TODO: ADD SECOND PROOF TO 4.1 
+%% TODO: ADD SECOND PROOF TO 4.1 %%
 
 > [!remark|cyan-note]
 > The proof above defines a way to solve triangular systems which is called *back substitution*.
@@ -202,3 +202,5 @@ Now that we have the fundamental tools we can proceed to define what a **Gaussia
 >[!definition|blue-hint]
 >Let $A \mathbf x = \mathbf b$ be a square system. Then the system is *singular* if the pivots of the triangular equivalent are non zero (e.n. if the system admits exactly one solution).
 >Otherwise the system is *non singular*.
+
+That's all about *Linear Systems*.
