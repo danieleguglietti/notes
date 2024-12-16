@@ -47,6 +47,10 @@ But before we can introduce this tool we need to define another tool which we'll
 >[!definition|blue-hint]
 >A *matrix* with $m$ rows and $n$ columns is a rectangular table of $m$ rows and $n$ columns containing numbers.
 >$$\begin{pmatrix} \alpha_{11} & \alpha_{12} & \alpha_{13} & \cdots & \alpha_{1n} \\ \alpha_{21} & \alpha_{22} & \alpha_{23} & \cdots & \alpha_{2n} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ \alpha_{m1} & \alpha_{m2} & \alpha_{m3} & \cdots & \alpha_{mn} \\\end{pmatrix}$$
+>The entry of $A$ located at the $i$-th row and at the $j$-th column is denoted with $a_{ij}$.
+
+> [!remark|cyan-note]
+> For short a matrix $A$ can be denoted as $(a_{ij})$.
 
 >[!definition|blue-hint]
 >Let $\mathbb{K}$ be a field. The set of all the $m \times n$ matrix with values in $\mathbb{K}$ is denoted with $\mathbb{K}^{n\times m}$.
@@ -103,7 +107,7 @@ We try to do that because in a specific case compatible triangular systems admit
 >Let $A \in \mathbb{K}^{n \times n}$ be a square matrix. Then $A$ is said to be an *upper triangular matrix* if it's structured like the following one.
 >$$ \begin{pmatrix} p_{1} & \alpha_{12} & \alpha_{13} & \cdots & \alpha_{1n} \\ 0 & p_{2} & \alpha_{23} & \cdots & \alpha_{2n} \\ 0 & 0 & p_{3} & \cdots & \alpha_{2n} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & 0 & \cdots & p_{n} \end{pmatrix} $$
 >Else if the zeros are above the diagonal and the numbers underneath then $A$ is said to be a *lower triangular matrix*.
->The elements on the diagonal $p_1,p_2,\dots p_n$ are called *pivots*.
+>The entries on the diagonal $p_1,p_2,\dots p_n$ are called *pivots*.
 
 > [!remark|cyan-note]
 > We'll not make any distinction between *lower* or *upper* triangular matrix, so we'll refer to them just as *trianuglar* matrix.
@@ -115,7 +119,7 @@ We try to do that because in a specific case compatible triangular systems admit
 >Let $A \in \mathbb{K}^{n \times n}$ be a triangular matrix and let $\mathbf{b} \in \mathbb{K}^n$ be a constant terms vector such that the system $A\mathbf{x} = \mathbf{b}$ is compatible. Then it admits exactly one solution if and only if pivots are non-zero.
 
 >[!proof|gray-info]
->Let's start by assuming that the elements $p_1,p_2,\dots p_n$ are non-zero.
+>Let's start by assuming that the entries $p_1,p_2,\dots p_n$ are non-zero.
 >Then the last row of the system is $p_n x_n = \beta_n$ admits only one solution $\sigma_n = \dfrac{\beta_n}{p_n}$ since $p_n \neq 0$.
 >If we substitute $x_n$ with $sigma_n$ on the $n-1$-th row we have $p_{n-1} x_{n-1} = \beta_{n-1} - \alpha_{n-1n}\, \sigma_n$ which admits only one solution $\sigma_{n-1}$.
 >Proceeding like that we reach the first equation where we can substitute every variables with their solutions we obtain the following equation
@@ -165,21 +169,21 @@ Now that we have the fundamental tools we can proceed to define what a **Gaussia
 > $$\begin{cases} x & +\, 3y & +\, z & -\, w &= & 1 \\ 3x & +\, 9y & +\, 4z & +\, w &= & 1 \\ 2x & +\, y & +\, 5z & +\, 2w &= & 0 \\ & y &-\,z &-\,w &= &2 \end{cases}$$
 > The complete matrix $(A|\mathbf b)$ associated to the system is the following.
 > $$ (A|\mathbf b) = \begin{pmatrix} 1&3&1&-1&1 \\ 3&9&4&1&1 \\ 2&1&5&2&0 \\ 0&1&-1&-1&2 \end{pmatrix} $$
-> Our goal is to transform $A$ to its equivalent triangular matrix. Let's start by setting our first pivot to the very first element of the matrix: $p_1 = \alpha_{11}$.
+> Our goal is to transform $A$ to its equivalent triangular matrix. Let's start by setting our first pivot to the very first entry of the matrix: $p_1 = \alpha_{11}$.
 > We can now proceed to do a Gaussian elimination to the first and second row. 
 > We set $h = -3$ and apply the *lemma* to the second row:  
 > $$-3\begin{pmatrix} 1&3&1&-1&1\end{pmatrix} + \begin{pmatrix}3&9&4&1&1\end{pmatrix} = \begin{pmatrix}0&0&1&4&-2\end{pmatrix}$$ 
-> And so we found an equivalent matrix to the first one which has a zero as first element of the second row.
+> And so we found an equivalent matrix to the first one which has a zero as first entry of the second row.
 > $$\begin{pmatrix} 1&3&1&-1&1 \\ 3&9&4&1&1 \\ 2&1&5&2&0 \\ 0&1&-1&-1&2 \end{pmatrix} \sim \begin{pmatrix} 1&3&1&-1&1 \\ 0&0&1&4&-2 \\ 2&1&5&2&0 \\ 0&1&-1&-1&2 \end{pmatrix}$$
 > We can keep proceeding in this way with the other rows (first with third and first with fourth)
 > $$\begin{pmatrix} 1&3&1&-1&1 \\ 3&9&4&1&1 \\ 2&1&5&2&0 \\ 0&1&-1&-1&2 \end{pmatrix} \sim \begin{pmatrix} 1&3&1&-1&1 \\ 0&0&1&4&-2 \\ 0&-5&3&5&-2 \\ 0&1&-1&-1&2 \end{pmatrix}$$
-> Now we have a zero as first element in each row. Keep in mind we need to reach a triangular matrix.
+> Now we have a zero as first entry in each row. Keep in mind we need to reach a triangular matrix.
 > Thanks to *Proposition 4.3* we can rearrange rows without changing the solutions of the system, so we switch the second row with the third row.
 > $$\begin{pmatrix} 1&3&1&-1&1 \\ 3&9&4&1&1 \\ 2&1&5&2&0 \\ 0&1&-1&-1&2 \end{pmatrix} \sim \begin{pmatrix} 1&3&1&-1&1 \\ 0&-5&3&5&-2 \\ 0&0&1&4&-2 \\ 0&1&-1&-1&2 \end{pmatrix}$$
-> Now we set the second pivot with the second element of the second row $p_2 = \alpha_{22}$. We want the matrix to have all zeros under our pivot so we need to do a Gaussian elimination (G.e. from now on) just with the third row since the second element on the last row is zero.
+> Now we set the second pivot with the second entry of the second row $p_2 = \alpha_{22}$. We want the matrix to have all zeros under our pivot so we need to do a Gaussian elimination (G.e. from now on) just with the third row since the second entry on the last row is zero.
 > To do so we can set $h = \dfrac{1}{5}$ and apply the lemma.
 > $$\begin{pmatrix} 1&3&1&-1&1 \\ 3&9&4&1&1 \\ 2&1&5&2&0 \\ 0&1&-1&-1&2 \end{pmatrix} \sim \begin{pmatrix} 1&3&1&-1&1 \\ 0&-5&3&5&-2 \\ 0&0&1&4&-2 \\ 0&0&-\dfrac{2}{5}&-\dfrac{1}{5}&-\dfrac{2}{5} \end{pmatrix}$$
-> Lastly, to achieve the triangular matrix, we need to have a zero on the third element on the last column. To do so we set the third pivot to the third element of the diagonal $p_3 = \alpha_{33}$ and we do a G.e. fixing $h = \dfrac{2}{5}$
+> Lastly, to achieve the triangular matrix, we need to have a zero on the third entry on the last column. To do so we set the third pivot to the third entry of the diagonal $p_3 = \alpha_{33}$ and we do a G.e. fixing $h = \dfrac{2}{5}$
 > $$\begin{pmatrix} 1&3&1&-1&1 \\ 3&9&4&1&1 \\ 2&1&5&2&0 \\ 0&1&-1&-1&2 \end{pmatrix} \sim \begin{pmatrix} 1&3&1&-1&1 \\ 0&-5&3&5&-2 \\ 0&0&1&4&-2 \\ 0&0&0& -\dfrac{7}{5} & -\dfrac{2}{5} \end{pmatrix} = (B|\mathbf d)$$
 > Now this is the complete matrix of the equivalent triangular system $B\mathbf x = \mathbf d$.
 > $$\begin{cases} x & +\, 3y & +\, z & -\, w &= & 1 \\  & -\, 5y & +\, 3z & -\, 5w &= & -2 \\ &  & z & +\, 4w &= & -2 \\  &  &  & -\dfrac{7}{5}w &= & -\dfrac{2}{5} \end{cases}$$
