@@ -2,7 +2,7 @@ One of our main goal in these course is to achive the ability of solving **linea
 We need to solve linear systems because most of the simple problems in geometry and physics, like intersections between line or planes, require to find for which values of the variables a set of **linear equation** has solutions.
 
 >[!definition|blue-hint]
->Let $\mathbb{K}$ be a field as defined in [[Algebraic Structures]].
+>Let $(\mathbb K, +, \cdot)$ be a field as defined in [[Algebraic Structures]].
 >A *linear equation* of $n$ variables with coefficients in $\mathbb{K}$ is a first-degree polynomial with $n$ variables.
 >$$\alpha_1x_1 + \alpha_2x_2 + \cdots \alpha_nx_n = \beta, \qquad \alpha_i,\beta \in \mathbb{K} \,\, \forall i = 1, \dots n $$
 
@@ -11,10 +11,10 @@ We need to solve linear systems because most of the simple problems in geometry 
 >$$ y - x = 1$$
 
 >[!definition|blue-hint]
->Let $\mathbb{K}$ be a field. A *root* for a linear equation is a $n$-tuple $(\sigma_1, \sigma_2, \dots \sigma_n) \in \mathbb{K}$ that satisfies the equality.
+>Let $(\mathbb K, +, \cdot)$ be a field. A *root* for a linear equation is a $n$-tuple $(\sigma_1, \sigma_2, \dots \sigma_n) \in \mathbb{K}$ that satisfies the equality.
 
 >[!definition|blue-hint]
->Let $\mathbb{K}$ be a field. A *linear system* of the $m$-th order in $n$ variables  is a collection of $m$ linear equations of $n$ variables.
+>Let $(\mathbb K, +, \cdot)$ be a field. A *linear system* of the $m$-th order in $n$ variables  is a collection of $m$ linear equations of $n$ variables.
 >$$\begin{cases} \alpha_{11}x_1 &+ \alpha_{12}x_2 & + \cdots \alpha_{1n}x_n &= & \beta_1 \\ \alpha_{21}x_1 &+ \alpha_{22}x_2 & + \cdots \alpha_{2n}x_n &= & \beta_2 \\ \,\, &&& \vdots & \\ \alpha_{m1}x_1 &+ \alpha_{m2}x_2 & + \cdots \alpha_{mn}x_n &= & \beta_m \end{cases}$$
 
 >[!example] Example (*4.2*)
@@ -22,7 +22,7 @@ We need to solve linear systems because most of the simple problems in geometry 
 >$$\begin{cases} y & - & x & = & 1 \\ y & + & 2x & = & -\frac{2}{3} \end{cases}$$
 
 >[!definition|blue-hint]
->Let $\mathbb{K}$ be a field. A solution for a linear system of $m$ equation is the $n$-tuple $(\sigma_1, \sigma_2, \dots \sigma_n) \in \mathbb{K}$ such that is a root for each $m$ equation.
+>Let $(\mathbb K, +, \cdot)$ be a field. A solution for a linear system of $m$ equation is the $n$-tuple $(\sigma_1, \sigma_2, \dots \sigma_n) \in \mathbb{K}$ such that is a root for each $m$ equation.
 
 >[!definition|blue-hint]
 >A linear system is said to be *compatible* if and only if it admits at least one solution.
@@ -53,13 +53,13 @@ But before we can introduce this tool we need to define another tool which we'll
 > For short a matrix $A$ can be denoted as $(a_{ij})$.
 
 >[!definition|blue-hint]
->Let $\mathbb{K}$ be a field. The set of all the $m \times n$ matrix with values in $\mathbb{K}$ is denoted with $\mathbb{K}^{n\times m}$.
+>Let $(\mathbb K, +, \cdot)$ be a field. The set of all the $m \times n$ matrix with values in $\mathbb{K}$ is denoted with $\mathbb{K}^{n\times m}$.
 
 >[!example] Example (*4.4*)
 >The set of all the $m \times n$ matrix with real values is $\mathbb{R}^{n\times m}$.
 
 >[!definition|blue-hint]
->Let $\mathbb{K}$ be a field and let $A \in \mathbb{K}^{m \times n}$ a $m \times n$ matrix.
+>Let $(\mathbb K, +, \cdot)$ be a field and let $A \in \mathbb{K}^{m \times n}$ a $m \times n$ matrix.
 >The vector $A_i = \begin{pmatrix} \alpha_{i1} & \alpha_{i2} & \dots & \alpha_{in} \end{pmatrix}$ is the *row* vector containing all the values on the $i$-th row.
 >The vector $A^j = \begin{pmatrix} \alpha_{1j} \\ \alpha_{2j} \\ \vdots \\ \alpha_{mj} \end{pmatrix}$ is the *column* vector containing all the values on the $j$-th row.
 
