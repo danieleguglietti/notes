@@ -13,7 +13,8 @@
 
 ## Complex Analysis
 
-* [Page 3](complex-analysis/page-3.md)
+* [Preface](complex-analysis/preface.md)
+* [Complex Numbers](complex-analysis/complex-numbers.md)
 
 ## Functional Analysis
 
