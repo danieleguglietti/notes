@@ -1,11 +1,9 @@
-# notes
-This repository contains all my reorganized notes from most of the courses I attend(ed) in my undergradute in physics.
+# ❓About
 
-Whether you feel like to do give me contribution (spell or adding content), just open a pr and I'll merge it or we'll descuss about it.
+Welcome to my online maths, physics  & computer science notes :)
 
-> [!TIP]
-> I suggest you to download and open these with Obsidian if there are no rendered notes.
-> (you would like to install [this css](https://forum.obsidian.md/t/callouts-galore-some-callout-css-i-made/63440) for callouts)
+The intent of this site is to provide free and open source notes from classes I attended during my bachelor's (and hopefully major) degree in physics. I'm trying to write these notes in a comprehensive as well as formal language so that everyone can understand them without missing any formalism from those fascinating subjects.&#x20;
 
-> [!NOTE]
-> I'm planning to transform the content in this repository in a web site. As soon as I have enough time to design and develope it, this repository will be used just as content db.
+The topics that each section will cover are based on the one proposed during lectures in **La Sapienza** Physics Department. In the heading pages for each section, you can find the bibliography for books and resources I used.
+
+Obviously, thanks to it's open source nature, you can contribute adding content or corrections both typos and miss leadings. Just open a PR and I will review it and eventually approve it. For more detail about contributions, check out [Contributions](contributions.md).
