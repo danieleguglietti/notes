@@ -1,0 +1,6 @@
+docutils
+Sphinx
+sphinx-book-theme
+sphinx-proof
+jupyter-book
+jupyterbook-patches
