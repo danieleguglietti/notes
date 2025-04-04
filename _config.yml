@@ -3,12 +3,97 @@
 
 title: Notes
 author: Daniele Guglietti
+copyright: "2025"
 logo: logo.png
+
+html:
+  theme_options:
+    use_sidenotes: true
+  use_multitoc_numbering: true
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+
+parse:
+  myst_enable_extensions:
+    - colon_fence 
+    - dollarmath
+    - linkify
+    - substitution
+    - tasklist
+    - amsmath
+  myst_dmath_double_inline: true
+  myst_heading_anchors : 5
+
+sphinx:
+  config:
+    html_static_path: 
+      - _static
+    numfig_secnum_depth: 2
+    language: en
+    latex_elements:
+          preamble: |
+            \usepackage{chemmacros}
+            \newcommand{\vect}[1]{\mathbf{#1}}
+            \newcommand{\uvect}[1]{\hat\mathbf{#1}}
+            \newcommand{\N}{\mathbb{N}}
+            \newcommand{\Z}{\mathbb{Z}}
+            \newcommand{\Q}{\mathbb{Q}}
+            \newcommand{\R}{\mathbb{R}}
+            \newcommand{\C}{\mathbb{C}}
+            \newcommand{\H}{\mathbb{H}}
+            \newcommand{\ip}{\mathbf{\cdot}}
+            \renewcommand{\iff}{\Longleftrightarrow}
+            \newcommand{\norm}[1]{\left\Vert{#1}\right\Vert}
+            \newcommand{\abs}[1]{\left\vert{#1}\right\vert}
+            \renewcommand{\span}[1]{\left<#1\right>}
+            \newcommand{\rank}[1]{\ensuremath{{\rm rank\,}{#1}}}
+            \renewcommand{\det}[1]{\operatorname{det}\left(#1\right)}
+            \renewcommand{\Re}[1]{\operatorname{Re}\left(#1\right)}
+            \renewcommand{\Im}[1]{\operatorname{Im}\left(#1\right)}
+            \newcommand{\mc}{\mathcal}
+            \usepackage{tabularx}
+            \usepackage{threeparttable}
+    mathjax3_config: 
+      tex:
+        inlineMath: [ ['$','$'], ['\(','\)'] ]
+        displayMath: [ ['$$','$$'], ['\[','\]'] ]
+        macros:
+          "mc": "\\mathcal"
+          "N": "\\mathbb{N}"
+          "Z": "\\mathbb{Z}"
+          "Q": "\\mathbb{Q}"
+          "R": "\\mathbb{R}"
+          "C": "\\mathbb{C}"
+          "H": "\\mathbb{H}"
+          "ip" : "\\mathbf{\\cdot}"
+          "vect": ["\\mathbf{#1}",1]
+          "uvect": ["\\hat\\mathbf{#1}",1]
+          "abs": ["\\left\\vert #1 \\right\\vert",1]
+          "norm": ["\\left\\Vert #1 \\right\\Vert",1]
+          "rank": ["{\\rm rank}\\, #1", 1]
+          "Span": ["\\left< #1 >\\rbrace",1]
+          "Det": ["\\operatorname{det}\\left(#1\\right)",1]
+          "Re": ["\\operatorname{Re}\\left(#1\\right)",1]
+          "Im": ["\\operatorname{Im}\\left(#1\\right)",1]
+  local_extensions:
+    applet: _ext/
+    htmltable: _ext/
+    latextable: _ext/
+    latexlist: _ext/
+    review: _ext/
+    parentheses_list: _ext/
+    latexlist: _ext/
+  extra_extensions:
+    - sphinx_proof
+    - jupyterbook_patches
+    
+latex:
+  latex_engine: pdflatex
+  use_jupyterbook_latex: true
+
 
 # Define the name of the latex output file for PDF builds
 latex:
