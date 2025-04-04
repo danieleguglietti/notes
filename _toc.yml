@@ -6,4 +6,4 @@ root: intro
 parts:
 - caption: Complex Analysis
   chapters:
-  - file: src/complex-analysis/complex-numbers
+  - file: complex-analysis/complex-numbers

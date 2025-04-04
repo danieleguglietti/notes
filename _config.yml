@@ -78,22 +78,9 @@ sphinx:
           "Det": ["\\operatorname{det}\\left(#1\\right)",1]
           "Re": ["\\operatorname{Re}\\left(#1\\right)",1]
           "Im": ["\\operatorname{Im}\\left(#1\\right)",1]
-  local_extensions:
-    applet: _ext/
-    htmltable: _ext/
-    latextable: _ext/
-    latexlist: _ext/
-    review: _ext/
-    parentheses_list: _ext/
-    latexlist: _ext/
   extra_extensions:
     - sphinx_proof
-    - jupyterbook_patches
-    
-latex:
-  latex_engine: pdflatex
-  use_jupyterbook_latex: true
-
+    - jupyterbook_patches    
 
 # Define the name of the latex output file for PDF builds
 latex:

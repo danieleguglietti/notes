@@ -9,7 +9,3 @@ For a geometric interpretation, finding roots of a quadratic equation is finding
 <div align="center"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Quadratic_eq_discriminant.svg" alt=""><figcaption><p>Relation between discriminant signature and intersection points.<br>By Olin - Own work, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=26107127">https://commons.wikimedia.org/w/index.php?curid=26107127</a></p></figcaption></figure></div>
 
 So to solve this issue, we need to _expand_ our vision of numbers: maybe we can find a specific field whose numbers can have negative squares.
-
-$$
-\vect{v}(t) = \frac{d\vect{s}}{dt}(t)
-$$
