@@ -4,7 +4,6 @@
 title: Notes
 author: Daniele Guglietti
 copyright: "2025"
-logo: logo.png
 
 html:
   theme_options:
@@ -31,7 +30,13 @@ sphinx:
   config:
     html_static_path: 
       - _static
+    html_theme_options:
+      logo: 
+        image_light: logo_black.svg
+        image_dark: logo_white.svg
     numfig_secnum_depth: 2
+    logo:
+        text: Notes
     language: en
     latex_elements:
           preamble: |
@@ -53,6 +58,8 @@ sphinx:
             \renewcommand{\det}[1]{\operatorname{det}\left(#1\right)}
             \renewcommand{\Re}[1]{\operatorname{Re}\left(#1\right)}
             \renewcommand{\Im}[1]{\operatorname{Im}\left(#1\right)}
+            \renewcommand{\div}[0]{\operatorname{div}}
+            \renewcommand{\rot}[0]{\operatorname{rot}}
             \newcommand{\mc}{\mathcal}
             \usepackage{tabularx}
             \usepackage{threeparttable}
@@ -78,12 +85,16 @@ sphinx:
           "Det": ["\\operatorname{det}\\left(#1\\right)",1]
           "Re": ["\\operatorname{Re}\\left(#1\\right)",1]
           "Im": ["\\operatorname{Im}\\left(#1\\right)",1]
+          "div": ["\\operatorname{div}",0]
+          "rot": ["\\operatorname{rot}",0]
   extra_extensions:
     - sphinx_proof
     - jupyterbook_patches    
 
 # Define the name of the latex output file for PDF builds
 latex:
+  latex_engine: pdflatex
+  use_jupyterbook_latex: true
   latex_documents:
     targetname: book.tex
 
@@ -100,5 +111,6 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: _static/favicon.png
   use_issues_button: true
   use_repository_button: true

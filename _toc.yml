@@ -2,8 +2,38 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: index
+options:
+  numbered: true
+
 parts:
-- caption: Complex Analysis
+- caption: ''
   chapters:
-  - file: complex-analysis/complex-numbers
+  - file: introduction.md
+- caption: Linear Algebra
+  chapters:
+  - file: linear-algebra/introduction.md
+- caption: Real Analysis
+  chapters:
+  - file: real-analysis/introduction.md
+- caption: Complex Analysis
+  numbered: True
+  chapters:
+  - file: complex-analysis/introduction.md
+    sections: 
+    - file: complex-analysis/complex-numbers.md
+- caption: Functional Analysis
+  chapters:
+  - file: functional-analysis/introduction.md
+- caption: Mechanics
+  chapters:
+  - file: mechanics/introduction.md
+- caption: Analitycal Mechanics
+  chapters:
+  - file: analytical-mechanics/introduction.md
+- caption: Thermodynamics
+  chapters:
+  - file: thermodynamics/introduction.md
+- caption: Electromagnetism
+  chapters:
+  - file: electromagnetism/introduction.md
