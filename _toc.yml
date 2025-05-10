@@ -19,7 +19,7 @@ parts:
 - caption: Complex Analysis
   numbered: True
   chapters:
-  - file: complex-analysis/introduction.md
+  - file: complex-analysis/complex-objects.md
     sections: 
     - file: complex-analysis/complex-numbers.md
 - caption: Functional Analysis

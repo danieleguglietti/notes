@@ -5,11 +5,6 @@ title: Notes
 author: Daniele Guglietti
 copyright: "2025"
 
-html:
-  theme_options:
-    use_sidenotes: true
-  use_multitoc_numbering: true
-
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -49,6 +44,7 @@ sphinx:
             \newcommand{\R}{\mathbb{R}}
             \newcommand{\C}{\mathbb{C}}
             \newcommand{\H}{\mathbb{H}}
+            \newcommand{\conj}[1]{#1^*}
             \newcommand{\ip}{\mathbf{\cdot}}
             \renewcommand{\iff}{\Longleftrightarrow}
             \newcommand{\norm}[1]{\left\Vert{#1}\right\Vert}
@@ -87,6 +83,7 @@ sphinx:
           "Im": ["\\operatorname{Im}\\left(#1\\right)",1]
           "div": ["\\operatorname{div}",0]
           "rot": ["\\operatorname{rot}",0]
+          "conj": ["#1^*",1]
   extra_extensions:
     - sphinx_proof
     - jupyterbook_patches    
@@ -114,3 +111,6 @@ html:
   favicon: _static/favicon.png
   use_issues_button: true
   use_repository_button: true
+  theme_options:
+    use_sidenotes: true
+  use_multitoc_numbering: true

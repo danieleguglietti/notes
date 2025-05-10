@@ -1,4 +1,4 @@
-# Complex Numbers, Complex Functions
+# Complex Objects
 
 Back in the days, mathematicians could relay solely on real numbers. That wasn't quite a big issue, since most of our problems could be solved with real numbers. However, there was a crucial issue that remained unsolved: finding roots for quadratic equations whose discriminant is negative.
 

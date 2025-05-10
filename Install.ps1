@@ -14,7 +14,7 @@ else {
 }
 
 Write-Host "Activating venv..."
-. venv/Scripts/Activate.ps1
+.venv/Scripts/Activate.ps1
 
 Write-Host "Installing dependencies..."
 try {
