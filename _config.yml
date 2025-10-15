@@ -23,12 +23,16 @@ parse:
 
 sphinx:
   config:
+    tud_change_logo: false
+    tud_change_favicon: false
     html_static_path: 
       - _static
     html_theme_options:
+      use_repository_button: true
+      repository_url: https://github.com/danieleguglietti/note
       logo: 
         image_light: logo_black.svg
-        image_dark: logo_white.svg
+        image_dark: logo_white.svg    
     numfig_secnum_depth: 2
     logo:
         text: Notes
@@ -86,7 +90,11 @@ sphinx:
           "conj": ["#1^*",1]
   extra_extensions:
     - sphinx_proof
-    - jupyterbook_patches    
+    - sphinx_tudelft_theme
+    - jupyterbook_patches
+    - sphinx_togglebutton
+    - sphinx.ext.imgconverter
+    # - sphinx_tippy
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -113,4 +121,4 @@ html:
   use_repository_button: true
   theme_options:
     use_sidenotes: true
-  use_multitoc_numbering: true
+  use_multitoc_numbering: false

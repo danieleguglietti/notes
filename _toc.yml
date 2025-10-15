@@ -22,18 +22,26 @@ parts:
   - file: complex-analysis/complex-objects.md
     sections: 
     - file: complex-analysis/complex-numbers.md
+    - file: complex-analysis/complex-functions.md
 - caption: Functional Analysis
   chapters:
   - file: functional-analysis/introduction.md
-- caption: Mechanics
+- caption: Classical Mechanics
   chapters:
   - file: mechanics/introduction.md
-- caption: Analitycal Mechanics
-  chapters:
-  - file: analytical-mechanics/introduction.md
 - caption: Thermodynamics
   chapters:
   - file: thermodynamics/introduction.md
-- caption: Electromagnetism
+- caption: Eletromagnetism
   chapters:
   - file: electromagnetism/introduction.md
+- caption: Quantum Mechanics
+  numbered: true
+  chapters:
+  - file: quantum-mechanics/mechanics-crisis.md
+    sections:
+    - file: quantum-mechanics/uv-catastrophe.md
+    - file: quantum-mechanics/photoelectric-effect.md
+    - file: quantum-mechanics/compton-effect.md
+    - file: quantum-mechanics/atom-instability.md
+    - file: quantum-mechanics/electron-magnetic-moment.md

@@ -1,6 +1,11 @@
+beautifulsoup4
 docutils
+jupyter_book
+roman
 Sphinx
-sphinx-book-theme
 sphinx-proof
-jupyter-book
-jupyterbook-patches
+TexSoup
+sphinx-book-theme
+teachbooks-sphinx-tippy
+jupyterbook_patches
+sphinx-tudelft-theme
